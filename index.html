@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bairaboina Vinetha | Portfolio</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f04;
+        }
+
+        /* Intro Section */
+        .intro {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #f04;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c03;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        #about {
+            background-color: #f9f9f9;
+        }
+
+        #projects {
+            background-color: #fff;
+        }
+
+        #contact {
+            background-color: #f9f9f9;
+        }
+
+        /* About Me Section */
+        #about p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .project {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 16px;
+        }
+
+        .project a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .project a:hover {
+            border-bottom: 2px solid #2575fc;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            background: #2575fc;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #333;
+            color: #fff;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro h1 {
+                font-size: 36px;
+            }
+
+            .intro p {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro h1 {
+                font-size: 28px;
+            }
+
+            .intro p {
+                font-size: 18px;
+            }
+
+            .btn {
+                padding: 10px 18px;
+            }
+
+            section {
+                padding: 30px 10px;
+            }
+
+            form input, form textarea {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>Hello, I'm Bairaboina Vinetha</h1>
+            <p>Aspiring Software Engineer | Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a final-year Electronics and Communication Engineering student at Gokaraju Rangaraju Institute of Engineering and Technology. I have a strong interest in Cybersecurity, Machine Learning, and Web Development. I'm proficient in Java, Python, and web technologies like HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Network Intrusion Detection System</h3>
+            <p>Developed a lightweight NIDS using an ensemble of autoencoders for anomaly detection.</p>
+            <a href="https://github.com/vinetha/NIDS" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:vinetha@example.com" method="POST" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Bairaboina Vinetha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
